@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4fbfa;
+    color: #1f2937;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0ea5a5;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 22px;
+    margin-left: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #475569;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout {
+    border: none;
+    background: none;
+    color: red;
+    cursor: pointer;
+}
+
+/* ===== CONTENEDOR ===== */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* ===== HERO ===== */
+
+.hero-banner {
+    background: linear-gradient(90deg, #00c9a7, #0077ff);
+    color: white;
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-banner h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* ===== FILTROS ===== */
+
+.search-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.search-filters input,
+.search-filters select {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+/* ===== GRID ===== */
+
+.grid-profesionales {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* ===== TARJETA ===== */
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    position: relative;
+}
+
+.rating {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 13px;
+}
+
+.avatar {
+    position: relative;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.status-online {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    background: #22c55e;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.specialty {
+    color: #0ea5a5;
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 12px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #047857;
+}
+
+/* ===== BOTONES ===== */
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0ea5a5;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    flex: 1;
+    border: 1px solid #0ea5a5;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    color: #0ea5a5;
+    cursor: pointer;
+}

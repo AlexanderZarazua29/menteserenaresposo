@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d9c6ff, #f3d9e7);
+}
+
+/* ===== CONTENEDOR ===== */
+.container {
+    width: 360px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease;
+}
+
+/* ===== LOGO ===== */
+.logo-img {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5b3cc4;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* ===== ANIMACIÓN ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    transition: 0.3s;
+    background: #fafafa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8a63ff;
+    box-shadow: 0 0 8px rgba(138,99,255,0.35);
+    background: #ffffff;
+}
+
+/* ===== BOTÓN ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #7f5af0, #a78bfa);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== LINKS ===== */
+p {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #7f5af0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 420px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .logo-img {
+        width: 75px;
+    }
+}

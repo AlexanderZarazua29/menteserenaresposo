@@ -1,0 +1,90 @@
+.navbar {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #5b3cc4;
+}
+
+.navbar .logo img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.navbar .brand {
+    font-weight: 700;
+}
+
+/* ===== MENU ===== */
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background .2s, color .2s;
+}
+
+/* Hover */
+.navbar nav a:hover {
+    background: #eefaf5;
+    color: #00b16a;
+}
+
+/* Activo */
+.navbar nav a.active {
+    background: #dff5ee;
+    color: #00b16a;
+    font-weight: 600;
+}
+
+/* ===== USUARIO ===== */
+.navbar .user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.navbar .user span {
+    color: #333;
+    font-weight: 500;
+}
+
+/* ===== LOGOUT ===== */
+.navbar .logout {
+    background: none;
+    border: none;
+    color: #e40101;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 6px 10px;
+}
+
+.navbar .logout:hover {
+    text-decoration: underline;
+}

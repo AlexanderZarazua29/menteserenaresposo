@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(to right, #f5f7fa, #e4ecf7);
+}
+
+.card-header {
+    background: linear-gradient(45deg, #6f42c1, #a370f7);
+    border: none;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.card-body {
+    background-color: #f8f9fa;
+}
+
+.input-group input {
+    border-radius: 30px 0 0 30px;
+}
+
+.input-group button {
+    border-radius: 0 30px 30px 0;
+}
